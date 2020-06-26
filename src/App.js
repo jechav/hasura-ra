@@ -3,6 +3,7 @@ import { Admin, Resource } from "react-admin";
 import ApolloClient from 'apollo-boost';
 import buildHasuraProvider from 'ra-data-hasura-graphql';
 import userCrud from "./views/users";
+import hostCrud from "./views/hosts";
 import config from './config';
 
 
@@ -34,6 +35,7 @@ class App extends Component {
             <Admin dataProvider={dataProvider}>
               { /* <Resource name="hosts" /> */ }
               <Resource name="user" {...userCrud} />
+              <Resource name="host" {...hostCrud} />
             </Admin>
         );
     }
