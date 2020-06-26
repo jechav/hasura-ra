@@ -1,5 +1,10 @@
 import React from "react";
-import { List, Datagrid, TextField, FunctionField } from "react-admin";
+import {
+  List,
+  Datagrid,
+  TextField,
+  // FunctionField,
+} from "react-admin";
 
 const UserList = (props) => (
   <List {...props}>
